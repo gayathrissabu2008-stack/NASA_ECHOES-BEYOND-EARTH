@@ -1,0 +1,182 @@
+
+/* ==========================================
+   ECHOES BEYOND EARTH — FINAL POLISH
+========================================== */
+
+/* Archive heading */
+
+.archive-heading-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.archive-toggle,
+.archive-reveal {
+    border: 1px solid rgba(215, 183, 122, 0.42);
+    border-radius: 4px;
+
+    background: rgba(215, 183, 122, 0.08);
+
+    color: #e6c98f;
+
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.09em;
+
+    padding: 8px 11px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.archive-toggle:hover,
+.archive-reveal:hover {
+    background: rgba(215, 183, 122, 0.17);
+
+    border-color: rgba(215, 183, 122, 0.8);
+
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   HIDE ARTIFACT ARCHIVE
+========================================== */
+
+.bottom-panel {
+    transition:
+        transform 0.32s ease,
+        opacity 0.25s ease;
+}
+
+body.artifacts-collapsed .bottom-panel {
+    transform: translateY(calc(100% + 55px)) !important;
+
+    opacity: 0 !important;
+
+    pointer-events: none !important;
+}
+
+
+/* ==========================================
+   SHOW ARTIFACTS BUTTON
+========================================== */
+
+.archive-reveal {
+    position: absolute;
+
+    z-index: 28;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+    background: rgba(7, 11, 18, 0.94);
+
+    backdrop-filter: blur(12px);
+}
+
+.archive-reveal:hover {
+    transform: translate(-50%, -1px);
+}
+
+.archive-reveal[hidden] {
+    display: none !important;
+}
+
+
+/* ==========================================
+   CAMERA CONTROLS
+========================================== */
+
+.camera-controls {
+    z-index: 32 !important;
+}
+
+.camera-controls button {
+    position: relative;
+}
+
+
+/* ==========================================
+   SITE CONTEXT
+========================================== */
+
+.site-context {
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 12px 36px rgba(0, 0, 0, 0.24);
+}
+
+.site-context[hidden] {
+    display: none !important;
+}
+
+
+/* ==========================================
+   3D CANVAS
+========================================== */
+
+#space-container canvas {
+    display: block;
+}
+
+
+/* ==========================================
+   PLANET NAVIGATION
+========================================== */
+
+.nav-button {
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.nav-button.active {
+    border-color: rgba(215, 183, 122, 0.8);
+}
+
+
+/* ==========================================
+   ARTIFACT PANEL
+========================================== */
+
+.artifact-panel {
+    z-index: 40;
+}
+
+.panel-overlay {
+    z-index: 39;
+}
+
+
+/* ==========================================
+   RESPONSIVE LAYOUT
+========================================== */
+
+@media (max-width: 900px) {
+
+    .archive-heading-actions {
+        gap: 8px;
+    }
+
+    .archive-toggle {
+        padding: 7px 8px;
+        font-size: 8px;
+    }
+
+    .archive-reveal {
+        bottom: 12px;
+    }
+
+}

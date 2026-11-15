@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Echoes Beyond Earth | Planetary Archive</title>
+
+    <meta name="description"
+          content="Explore the machines, missions and scientific legacy left across the Moon and Mars.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/repair-overrides.css">
+    <link rel="stylesheet" href="css/polish.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="loading-screen">
+        <div class="loader-orbit">
+            <div class="loader-moon"></div>
+        </div>
+        <p>INITIALIZING LUNAR ARCHIVE</p>
+        <span>PREPARING EXPLORATION ENVIRONMENT</span>
+    </div>
+
+    <div id="app">
+
+        <!-- BACKGROUND 3D ENVIRONMENT -->
+        <div id="space-container"></div>
+
+        <div class="space-vignette"></div>
+
+        <!-- TOP NAVIGATION -->
+        <header class="topbar">
+
+            <a class="brand" href="#">
+                <div class="brand-icon">E</div>
+                <div>
+                    <h1>ECHOES <span>BEYOND EARTH</span></h1>
+                    <p>AN ARCHIVE OF HUMAN EXPLORATION</p>
+                </div>
+            </a>
+
+            <div class="top-center">
+                <span class="live-dot"></span>
+                <span id="mode-label">LUNAR EXPLORATION MODE</span>
+            </div>
+
+            <div class="top-actions">
+                <button class="nav-button active" id="moon-button" data-planet="moon">01 / MOON</button>
+                <button class="nav-button" id="mars-button" data-planet="mars">02 / MARS</button>
+            </div>
+
+        </header>
+
+        <!-- LEFT PANEL -->
+        <aside class="left-panel">
+
+            <div class="eyebrow">
+                <span class="eyebrow-line"></span>
+                <span id="destination-number">DESTINATION 001</span>
+            </div>
+
+            <h2 class="planet-title" id="planet-title">THE<br><span>MOON.</span></h2>
+
+            <p class="planet-description">
+                A world we visited, explored and left behind.
+                Discover the machines that changed our understanding
+                of Earth's closest neighbour.
+            </p>
+
+            <div class="planet-stats">
+
+                <div class="stat">
+                    <span>AVG. DISTANCE</span>
+                    <strong id="planet-distance">384,400 <small>KM</small></strong>
+                </div>
+
+                <div class="stat">
+                    <span>DIAMETER</span>
+                    <strong id="planet-diameter">3,474 <small>KM</small></strong>
+                </div>
+
+                <div class="stat">
+                    <span>CREWED LANDINGS</span>
+                    <strong id="planet-stat-third">06</strong>
+                </div>
+
+            </div>
+
+            <div class="explore-instruction">
+                <div class="mouse-icon">
+                    <span></span>
+                </div>
+                <div>
+                    <strong>EXPLORE THE SURFACE</strong>
+                    <p>Drag to rotate · Scroll to zoom</p>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- RIGHT HUD -->
+        <aside class="right-hud">
+
+            <div class="hud-heading" id="archive-heading">MISSION ARCHIVE</div>
+
+            <div class="hud-stat">
+                <span>DOCUMENTED MISSIONS</span>
+                <strong id="mission-count">06</strong>
+            </div>
+
+            <div class="hud-stat">
+                <span>ARTIFACTS FEATURED</span>
+                <strong id="artifact-total">04</strong>
+            </div>
+
+            <div class="hud-stat">
+                <span>DESTINATION</span>
+                <strong id="destination-label">EARTH&#39;S MOON</strong>
+            </div>
+
+            <div class="legend">
+                <div><span class="legend-dot"></span> Apollo landing sites</div>
+                <div><span class="legend-dot passive"></span> Scientific equipment</div>
+            </div>
+
+        </aside>
+
+        <div class="site-context" id="site-context" hidden>
+            <div class="site-context-kicker">LANDING SITE SELECTED</div>
+            <strong id="site-context-name">TRANQUILITY BASE</strong>
+            <span id="site-context-mission">APOLLO 11</span>
+            <button id="return-global" type="button">← RETURN TO GLOBAL VIEW</button>
+        </div>
+
+        <!-- BOTTOM EXPLORATION BAR -->
+        <section class="bottom-panel">
+
+            <div class="bottom-heading">
+                <div>
+                    <span class="section-kicker">EXPLORE THE ARCHIVE</span>
+                    <h3 id="artifact-heading">LUNAR ARTIFACTS</h3>
+                </div>
+
+                <div class="archive-heading-actions">
+                    <span class="artifact-count" id="artifact-count">04 DISCOVERIES</span>
+                    <button class="archive-toggle" id="toggle-artifacts" type="button"
+                            aria-controls="artifact-list" aria-expanded="true">− HIDE ARCHIVE</button>
+                </div>
+            </div>
+
+            <div class="artifact-list" id="artifact-list">
+
+                <!-- Generated by JavaScript -->
+
+            </div>
+
+        </section>
+
+        <button class="archive-reveal" id="show-artifacts" type="button" hidden
+                aria-controls="artifact-list" aria-hidden="true">＋ SHOW ARTIFACTS</button>
+
+        <!-- ARTIFACT INFORMATION PANEL -->
+        <div class="panel-overlay" id="panel-overlay"></div>
+
+        <aside class="artifact-panel" id="artifact-panel">
+
+            <button class="close-panel" id="close-panel">
+                ×
+            </button>
+
+            <div id="artifact-content"></div>
+
+        </aside>
+
+        <!-- CAMERA CONTROLS -->
+        <div class="camera-controls">
+
+            <button id="zoom-in" title="Zoom in">+</button>
+            <button id="zoom-out" title="Zoom out">−</button>
+            <button id="reset-view" title="Reset view">⌖</button>
+
+        </div>
+
+        <div class="coordinates">
+            <span>LAT <strong id="latitude">00.000°</strong></span>
+            <span>LON <strong id="longitude">00.000°</strong></span>
+        </div>
+
+        <div class="footer-note">
+            <span><span id="footer-archive">NASA PLANETARY EXPLORATION ARCHIVE</span></span>
+            <span>ILLUSTRATIVE 3D ENVIRONMENT · NOT TO SCALE</span>
+        </div>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
