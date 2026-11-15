@@ -14,7 +14,7 @@
 
 ---
 
-## 🔭 Overview
+##  Overview
 
 Humanity's exploration of space has left behind more than scientific discoveries. Across the Moon and Mars, remnants of decades of exploration still remain — from lunar landers and scientific instruments to rovers and experimental spacecraft.
 
@@ -26,13 +26,13 @@ Users can explore 3D representations of the Moon and Mars, locate historical mis
 
 Our project transforms information about forgotten space hardware into an immersive, accessible storytelling experience, making the history of planetary exploration engaging for students and space enthusiasts.
 
-## 🌐 Live Experience
+##  Live Experience
 
 <p align="center">
   https://gayathrissabu2008-stack.github.io/NASA_ECHOES-BEYOND-EARTH/
 </p>
 
-## 🎯 The Problem
+##  The Problem
 
 Space exploration is often remembered through its greatest achievements — the first Moon landing, the discovery of water on Mars, and the extraordinary journeys of planetary rovers.
 
@@ -42,7 +42,7 @@ Information about these artifacts is scattered across mission archives and techn
 
 We wanted to make these stories easier to discover, visualize, and understand.
 
-## 💡 Our Approach
+##  Our Approach
 
 Instead of presenting discarded equipment as a collection of historical facts, we created an interactive planetary archive that connects **the artifact, its location, its mission, and the science behind it.**
 
@@ -54,7 +54,7 @@ The experience is built around three ideas:
 
 This approach turns planetary exploration history into an experience of discovery rather than passive reading.
 
-## ✨ Key Features
+##  Key Features
 
 ### 1. Interactive 3D Planets
 - Explore 3D representations of the Moon and Mars.
@@ -84,11 +84,11 @@ Each artifact is presented through its connection to a larger exploration story,
 ### 5. Educational Accessibility
 The experience is designed to make planetary exploration approachable for school-age learners and space enthusiasts by combining visual exploration with accessible scientific storytelling.
 
-## 🪐 The Artifact Collection
+##  The Artifact Collection
 
 Our archive currently features 12 artifacts from lunar and Martian exploration.
 
-### 🌕 Lunar Artifacts
+###  Lunar Artifacts
 
 | Artifact | Mission |
 |---|---|
@@ -99,7 +99,7 @@ Our archive currently features 12 artifacts from lunar and Martian exploration.
 | Lunar Roving Vehicle | Apollo 15 |
 | Surveyor 3 Lander | Surveyor 3 |
 
-### 🔴 Martian Artifacts
+###  Martian Artifacts
 
 | Artifact | Mission |
 |---|---|
@@ -110,7 +110,7 @@ Our archive currently features 12 artifacts from lunar and Martian exploration.
 | Curiosity Rover | Mars Science Laboratory |
 | Ingenuity Mars Helicopter | Mars 2020 |
 
-## ⚙️ Technology Stack
+##  Technology Stack
 
 | Technology | Application |
 |---|---|
@@ -122,7 +122,7 @@ Our archive currently features 12 artifacts from lunar and Martian exploration.
 | Git & GitHub | Version control and collaboration |
 | GitHub Pages | Deployment and hosting |
 
-## 🌱 Educational Impact
+##  Educational Impact
 
 ECHOES BEYOND EARTH aims to bridge the gap between space exploration history and interactive science education.
 
@@ -136,7 +136,7 @@ Through this project, we aim to:
 
 We believe that the story of a space mission should not end when its equipment stops functioning or its scientific objectives are completed.
 
-## 🔮 Future Scope
+##  Future Scope
 
 ECHOES BEYOND EARTH can evolve into a much larger interactive archive of human space exploration.
 
@@ -149,7 +149,7 @@ Planned possibilities include:
 - Providing guided educational journeys for younger audiences.
 - Integrating more detailed scientific references and mission documentation.
 
-## 📖 Sources & Scientific Accuracy
+##  Sources & Scientific Accuracy
 
 The archive is intended as an educational visualization of historical space mission equipment.
 
@@ -161,7 +161,7 @@ ECHOES BEYOND EARTH is an independent student-developed project created for the 
 
 ---
 
-## 🌌 The Thought Behind ECHOES BEYOND EARTH
+##  The Thought Behind ECHOES BEYOND EARTH
 
 Every piece of equipment left on another world represents a chapter in humanity's journey into space.
 
@@ -174,7 +174,7 @@ These objects may no longer be active, but the knowledge they helped create rema
 Through **ECHOES BEYOND EARTH**, we bring attention to the often-overlooked footprints of exploration and the stories they continue to tell.
 
 <p align="center">
-  **WE LEFT THE EQUIPMENT BEHIND. WE DIDN'T LEAVE ITS LEGACY.**
+  WE LEFT THE EQUIPMENT BEHIND. WE DIDN'T LEAVE ITS LEGACY.
 </p>
 
 <p align="center">
