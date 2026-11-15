@@ -1,7 +1,7 @@
 
-/* ==========================================
+/* 
    ECHOES BEYOND EARTH — FINAL POLISH
-========================================== */
+*/
 
 /* Archive heading */
 
@@ -44,9 +44,9 @@
 }
 
 
-/* ==========================================
+/* 
    HIDE ARTIFACT ARCHIVE
-========================================== */
+ */
 
 .bottom-panel {
     transition:
@@ -63,9 +63,9 @@ body.artifacts-collapsed .bottom-panel {
 }
 
 
-/* ==========================================
+/* 
    SHOW ARTIFACTS BUTTON
-========================================== */
+ */
 
 .archive-reveal {
     position: absolute;
@@ -93,9 +93,9 @@ body.artifacts-collapsed .bottom-panel {
 }
 
 
-/* ==========================================
+/* 
    CAMERA CONTROLS
-========================================== */
+*/
 
 .camera-controls {
     z-index: 32 !important;
@@ -106,9 +106,9 @@ body.artifacts-collapsed .bottom-panel {
 }
 
 
-/* ==========================================
+/* 
    SITE CONTEXT
-========================================== */
+ */
 
 .site-context {
     backdrop-filter: blur(12px);
@@ -122,18 +122,18 @@ body.artifacts-collapsed .bottom-panel {
 }
 
 
-/* ==========================================
+/* 
    3D CANVAS
-========================================== */
+ */
 
 #space-container canvas {
     display: block;
 }
 
 
-/* ==========================================
+/* 
    PLANET NAVIGATION
-========================================== */
+ */
 
 .nav-button {
     transition:
@@ -147,9 +147,9 @@ body.artifacts-collapsed .bottom-panel {
 }
 
 
-/* ==========================================
+/* 
    ARTIFACT PANEL
-========================================== */
+ */
 
 .artifact-panel {
     z-index: 40;
@@ -160,9 +160,9 @@ body.artifacts-collapsed .bottom-panel {
 }
 
 
-/* ==========================================
+/* 
    RESPONSIVE LAYOUT
-========================================== */
+*/
 
 @media (max-width: 900px) {
 
