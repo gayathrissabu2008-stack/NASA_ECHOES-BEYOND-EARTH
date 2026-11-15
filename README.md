@@ -28,7 +28,7 @@ Our project transforms information about forgotten space hardware into an immers
 ## 🌐 Live Experience
 
 <p align="center">
-  **[EXPLORE ECHOES BEYOND EARTH →](https://gayathrissabu2008-stack.github.io/NASA_ECHOES-BEYOND-EARTH/)**
+  https://gayathrissabu2008-stack.github.io/NASA_ECHOES-BEYOND-EARTH/
 </p>
 
 ## 🎯 The Problem
