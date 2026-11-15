@@ -7,7 +7,8 @@
 </p>
 
 <p align="center">
-  **NASA Space Apps Challenge 2026**  
+  NASA Space Apps Challenge 2026 
+  
   Challenge: *Abandoned but Not Forgotten: Storytelling about NASA's Discarded Equipment on the Moon and Mars*
 </p>
 
